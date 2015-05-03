@@ -28,7 +28,7 @@ module.exports = yeoman.generators.Base.extend({
     //make sure the config is right
     this.log("Name of your new page:" + chalk.red(this.pageName));
     this.pageName = _.camelCase(this.pageName);
-    this.pageRoot = this.destinationPath('/'+this.pageName);
+    this.pageRoot = this.destinationPath('/app/'+this.pageName);
     if(this.ctrls) {
       this.log("list of " + this.ctrls.length + " controllers for this new page:" + chalk.red(this.ctrls));
       for(var i=0; i<this.ctrls.length; i++){
