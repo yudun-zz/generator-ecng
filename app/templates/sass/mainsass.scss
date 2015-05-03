@@ -1,0 +1,10 @@
+/**
+ * @sassdoc
+ * @name <%= pageName %>.scss
+ * @desc the main sass file for page <%= pageName %>
+ */
+
+<% _.forEach(ctrls, function(ctrl) { %>
+@import '<%- ctrl %>/_<%- ctrl %>';
+<% }); %>
+

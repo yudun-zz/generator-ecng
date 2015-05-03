@@ -1,0 +1,3 @@
+<% _.forEach(ctrls, function(ctrl) { %>
+<div ng-include="'<%= mainAppName %>/views/partials/<%- ctrl %>/<%- ctrl %>.html'"></div>
+<% }); %>
